@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+</head>
+<body>
+  <h1>User Form</h1>
+  <form action="/users" method="POST">
+    <label for="firstName">First Name:
+      <input type="text" id="firstName" name="firstName" value="<%= locals.firstName %>">
+    </label>
+    <button type="submit" value="Submit">Submit</button>
+  </form>
+</body>
+</html>
