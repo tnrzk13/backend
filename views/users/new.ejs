@@ -7,7 +7,7 @@
   <h1>User Form</h1>
   <form action="/users" method="POST">
     <label for="firstName">First Name:
-      <input type="text" id="firstName" name="firstName" value="<%= locals.firstName %>">
+      <input type="text" id="firstName" name="firstName" value="<%= locals.firstName || 'Default' %>">
     </label>
     <button type="submit" value="Submit">Submit</button>
   </form>
